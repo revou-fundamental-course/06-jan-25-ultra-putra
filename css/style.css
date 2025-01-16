@@ -47,15 +47,15 @@ nav a {
 }
 
 .pict1 {
-  background-image: url("/assets/img/1.jpg");
+  background-image: url("../assets/img/1.jpg");
 }
 
 .pict2 {
-  background-image: url("/assets/img/2.jpg");
+  background-image: url("../assets/img/2.jpg");
 }
 
 .pict3 {
-  background-image: url("/assets/img/3.jpg");
+  background-image: url("../assets/img/3.jpg");
 }
 
 .portfolio {
