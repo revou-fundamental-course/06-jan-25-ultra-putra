@@ -6,37 +6,137 @@
     <title>My Portofolio</title>
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="background-color: gray">
+  <body>
     <header class="main-header">
-      <img src="assets/rv.png" alt="logo" width="50" height="50" />
+      <img id="logo" src="assets/ronia.PNG" alt="logo" width="50" height="50" />
       <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" class="left-rounded">Home</a>
+        <a href="#our-profile">Our Profile</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#message-us" class="right-rounded">Message Us</a>
       </nav>
     </header>
 
     <main>
       <section id="home">
-        <h2>Home</h2>
+        <header>
+          <h1 id="greeting">Welcome to my portofolio</h1>
+        </header>
         <p>
-          Welcome to my portofolio. I am a web developer. I am passionate about
-          web development. I am a tech enthusiast.
+          Welcome to my portofolio. I am passionate about web development. I am
+          a tech enthusiast.
         </p>
 
-        <div>
-          <img src="https://picsum.photos/1366/768" alt="pic1" width="100%" />
-          <img src="https://picsum.photos/1366/768" alt="pic1" width="100%" />
-          <img src="https://picsum.photos/1366/768" alt="pic1" width="100%" />
+        <div class="banner pict1"></div>
+        <div class="banner pict2"></div>
+        <div class="banner pict3"></div>
+      </section>
+      <hr />
+      <section id="our-profile">
+        <header>
+          <h1>Our Profile</h1>
+          <p>
+            Saya adalah seorang developer. Saya memiliki pengalaman dalam
+            beberapa bahasa pemrograman dan elektronika application
+          </p>
+          <ul>
+            <li>Java</li>
+            <li>VB Net</li>
+            <li>Delphi</li>
+            <li>Python</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>Arduino</li>
+            <li>Esp32</li>
+          </ul>
+        </header>
+      </section>
+      <hr />
+      <section id="portfolio">
+        <header>
+          <h1>Portofolio</h1>
+        </header>
+        <div class="portfolio">
+          <div class="portofolio-item">
+            <img src="assets/ultrakasir.PNG" alt="ultrakasir" />
+            <h3>Ultra Cashier</h3>
+            <p>Software point of sales kasir dari bahasa permrograman Java</p>
+          </div>
+          <div class="portfolio-item">
+            <img src="assets/iot.PNG" alt="iot" />
+            <h3>IoT</h3>
+            <p>Alat pemantau benda dengan sensor ultrasonic</p>
+          </div>
         </div>
       </section>
+      <hr />
+      <section id="message-us">
+        <header>
+          <h1>Message Us</h1>
+        </header>
 
-      <section id="About">
-        <h2>About</h2>
-      </section>
+        <div class="container-message">
+          <div class="form-contact">
+            <form id="contact-form">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <label for="birth-date">Tanggal Lahir:</label>
+              <input type="date" id="birth-date" name="birth-date" required />
+              <div class="radio-group">
+                <label>Jenis Kelamin:</label>
+                <label class="div-label" for="male">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Laki-Laki"
+                    required
+                  />
+                  <div class="label">Pria</div>
+                </label>
+                <label class="div-label" for="female">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <div class="label">Wanita</div>
+                </label>
+              </div>
 
-      <section id="Contact">
-        <h2>Contact</h2>
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <button type="submit">Send</button>
+            </form>
+          </div>
+
+          <div class="form-result">
+            <div>
+              <div>
+                <b>Waktu Sekarang : </b>
+                <span id="current-time">-</span>
+              </div>
+              <div>
+                <b>Nama : </b>
+                <span id="output-name">-</span>
+              </div>
+              <div>
+                <b>Tanggal Lahir : </b>
+                <span id="output-birth-date">-</span>
+              </div>
+              <div>
+                <b>Jenis Kelamin : </b>
+                <span id="output-gender">-</span>
+              </div>
+              <div>
+                <b>Pesan : </b>
+                <span id="output-message">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
