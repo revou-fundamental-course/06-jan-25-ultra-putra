@@ -80,9 +80,30 @@
             <form id="contact-form">
               <label for="name">Name</label>
               <input type="text" id="name" name="name" required />
-
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required />
+              <label for="birth-date">Tanggal Lahir:</label>
+              <input type="date" id="birth-date" name="birth-date" required />
+              <div class="radio-group">
+                <label>Jenis Kelamin:</label>
+                <label class="div-label" for="male">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Laki-Laki"
+                    required
+                  />
+                  <div class="label">Pria</div>
+                </label>
+                <label class="div-label" for="female">
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Perempuan"
+                  />
+                  <div class="label">Wanita</div>
+                </label>
+              </div>
 
               <label for="message">Message</label>
               <textarea id="message" name="message" required></textarea>
@@ -92,10 +113,28 @@
           </div>
 
           <div class="form-result">
-            <p id="result-name"></p>
-            <p id="result-email"></p>
-            <p id="result-jk"></p>
-            <p id="result-pesan"></p>
+            <div>
+              <div>
+                <b>Waktu Sekarang : </b>
+                <span id="current-time">-</span>
+              </div>
+              <div>
+                <b>Nama : </b>
+                <span id="output-name">-</span>
+              </div>
+              <div>
+                <b>Tanggal Lahir : </b>
+                <span id="output-birth-date">-</span>
+              </div>
+              <div>
+                <b>Jenis Kelamin : </b>
+                <span id="output-gender">-</span>
+              </div>
+              <div>
+                <b>Pesan : </b>
+                <span id="output-message">-</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
